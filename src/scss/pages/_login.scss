@@ -1,0 +1,27 @@
+.login {
+    @apply w-full h-full bg-cover flex bg-[url(../images/main.jpg)];
+    
+    // background-image: ;
+    &::before {
+        @apply w-full h-full absolute top-0 left-0 right-0 bottom-0 bg-secondary bg-opacity-60;
+        content: '';
+    }
+}
+.login-box {
+    @apply w-[27rem] bg-white rounded-md
+    absolute top-1/2 right-24 -translate-y-1/2 p-10 z-10 shadow-primaryShadow; 
+    .logo {
+        @apply w-44 mb-11;
+    }
+}
+
+.login-content {
+    @apply px-24 w-1/2 flex flex-col justify-center h-full relative;
+    h2 {
+        @apply text-white text-4xl font-bold mb-7;
+    }
+    p {
+        @apply text-white font-medium pb-4;
+        @include toRem(font-size, 13);
+    }
+}

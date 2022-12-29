@@ -1,0 +1,29 @@
+.btn-group {
+    @apply flex justify-between items-center;
+}
+.button {
+    @apply flex items-center bg-primary border border-primary
+    px-4 h-10 text-sm font-semibold;
+    @include toRem(border-radius, 5);
+    @at-root #{&}-primary {
+        @apply bg-primary text-white;
+    }
+    @at-root #{&}-secondary {
+        @apply bg-transparent text-primary;
+    }
+    @at-root #{&}-tertary {
+        @apply bg-white text-primary border-white;
+    }
+    @at-root #{&}-link {
+        @apply inline bg-transparent h-auto border-none text-primary px-0;
+    }
+    @at-root #{&}-sm {
+        @apply h-8;
+    }
+    @at-root #{&}-md {
+        @apply h-10;
+    }
+    @at-root #{&}-lg {
+        @apply h-11;
+    }
+}

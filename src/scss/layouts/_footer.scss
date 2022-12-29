@@ -1,0 +1,21 @@
+.footer {
+    @apply bg-secondary absolute bottom-0 left-0 right-0 w-full flex items-center justify-between px-10 py-4;
+}
+.footer-menu {
+    @apply flex;
+    .menu-item {
+        @apply px-4 first:pl-0 last:pr-0 relative last:before:hidden;
+        &::before {
+            content: '';
+            @apply absolute w-2 h-2 rounded-full bg-white bg-opacity-50 -right-1 top-[10px];
+        }
+    }
+    .button-link {
+        @apply text-white font-medium text-xs;
+    }
+}
+.footer-logo {
+    img {
+        @apply w-24;
+    }
+}
